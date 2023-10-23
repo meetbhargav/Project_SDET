@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-23T11:13:14 IST" name="Default suite" finished-at="2023-10-23T11:14:52 IST" duration-ms="97499">
+    <groups>
+    </groups>
+    <test started-at="2023-10-23T11:13:14 IST" name="Default test" finished-at="2023-10-23T11:14:52 IST" duration-ms="97499">
+      <class name="TestNG_Annotations">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:13:14 IST" name="beforeTest" finished-at="2023-10-23T11:13:18 IST" duration-ms="3380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="testLogo()[pri:0, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:13:18 IST" name="testLogo" finished-at="2023-10-23T11:13:18 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testRequestDemoButton()[pri:0, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:13:18 IST" name="testRequestDemoButton" finished-at="2023-10-23T11:14:03 IST" duration-ms="44617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequestDemoButton -->
+        <test-method signature="testSolutions()[pri:0, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:14:03 IST" name="testSolutions" finished-at="2023-10-23T11:14:04 IST" duration-ms="1021" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method TestNG_Annotations.testSolutions() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method TestNG_Annotations.testSolutions() didn't finish within the time-out 1000
+at java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+at java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+at java.base@14.0.2/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1862)
+at java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+at java.base@14.0.2/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1932)
+at java.base@14.0.2/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:386)
+at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda$176/0x00000001001c6840.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$328/0x000000010029ac40.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at app//org.openqa.selenium.remote.http.Filter$$Lambda$177/0x00000001001c6c40.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at app//TestNG_Annotations.testSolutions(TestNG_Annotations.java:116)
+at java.base@14.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@14.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base@14.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@14.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@14.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolutions -->
+        <test-method signature="testProducts()[pri:1, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:14:04 IST" name="testProducts" finished-at="2023-10-23T11:14:10 IST" duration-ms="5956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProducts -->
+        <test-method signature="testCompany()[pri:2, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:14:10 IST" name="testCompany" finished-at="2023-10-23T11:14:13 IST" duration-ms="3153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompany -->
+        <test-method signature="testResources()[pri:4, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:14:13 IST" name="testResources" finished-at="2023-10-23T11:14:28 IST" duration-ms="14907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResources -->
+        <test-method signature="testRpaLink()[pri:6, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:14:28 IST" name="testRpaLink" finished-at="2023-10-23T11:14:51 IST" duration-ms="23652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRpaLink -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestNG_Annotations@54afd745]" started-at="2023-10-23T11:14:51 IST" name="afterTest" finished-at="2023-10-23T11:14:52 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestNG_Annotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
