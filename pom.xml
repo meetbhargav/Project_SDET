@@ -3,6 +3,47 @@
   <groupId>Project_SDET</groupId>
   <artifactId>Project_SDET</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <configuration>
+				<suiteXmlFiles>
+					<suiteXmlFile>testng.xml</suiteXmlFile>
+				</suiteXmlFiles>
+            </configuration>
+        </plugin>
+                <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.0</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <!--<mainClass>com.code.ReadAnWriteDate</mainClass>-->
+                <!--<mainClass>com.code.Selenium_AutomationAnywhere</mainClass> -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
   <dependencies>
 	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>

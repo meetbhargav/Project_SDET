@@ -108,7 +108,7 @@ public class TestNG_Annotations {
 			
 	  }
 	  
-	  @Test(timeOut = 1000)
+	  @Test(timeOut = 4000)
 	  public void testSolutions() throws InterruptedException {
 		  WebElement solutionsLink = driver.findElement(By.xpath("//a[text()='Solutions']"));
 		  String solutionsUrl = "https://www.automationanywhere.com/solutions";
@@ -122,7 +122,6 @@ public class TestNG_Annotations {
 				if(solutionsUrl.equals(driver.getCurrentUrl()))
 					System.out.println("URL after clicking on Solutions Link: "+driver.getCurrentUrl());
 			}
-		  Thread.sleep(2000);
 	  }
 	  
 	  
@@ -136,7 +135,7 @@ public class TestNG_Annotations {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		
 		//Accept Cookies
 		WebElement acceptCookiesButton = driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']"));
