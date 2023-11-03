@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 24 13:50:54 IST 2023</td>
+<td>Started on:</td><td>Tue Oct 31 10:34:01 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>94 seconds (94747 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4675 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,79 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.test.TestNG_Annotations.testSolutions()'><b>testSolutions</b><br>Test class: com.test.TestNG_Annotations</td>
-<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.test.TestNG_Annotations.testSolutions() didn&apos;t finish within the time-out 1000
-	at java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
-	at java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-	at java.base@14.0.2/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1862)
-	at java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
-	at java.base@14.0.2/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1932)
-	at java.base@14.0.2/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
-	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:386)
-	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda$175/0x00000001001c7c40.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$327/0x000000010029a840.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$176/0x00000001001c6840.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at app//com.test.TestNG_Annotations.testSolutions(TestNG_Annotations.java:117)
-	at java.base@14.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace50345623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace50345623'><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.test.TestNG_Annotations.testSolutions() didn&apos;t finish within the time-out 1000
-	at java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
-	at java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-	at java.base@14.0.2/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1862)
-	at java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
-	at java.base@14.0.2/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1932)
-	at java.base@14.0.2/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
-	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:386)
-	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda$175/0x00000001001c7c40.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$327/0x000000010029a840.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$176/0x00000001001c6840.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at app//com.test.TestNG_Annotations.testSolutions(TestNG_Annotations.java:117)
-	at java.base@14.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@14.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@14.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@14.0.2/java.lang.reflect.Method.invoke(Method.java:564)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-	at java.base@14.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
-</pre></div></td>
-<td>1</td>
-<td>com.test.TestNG_Annotations@54afd745</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -149,35 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.TestNG_Annotations.testCompany()'><b>testCompany</b><br>Test class: com.test.TestNG_Annotations</td>
-<td></td>
-<td>3</td>
-<td>com.test.TestNG_Annotations@54afd745</td></tr>
-<tr>
-<td title='com.test.TestNG_Annotations.testRpaLink()'><b>testRpaLink</b><br>Test class: com.test.TestNG_Annotations</td>
-<td></td>
-<td>23</td>
-<td>com.test.TestNG_Annotations@54afd745</td></tr>
-<tr>
-<td title='com.test.TestNG_Annotations.testProducts()'><b>testProducts</b><br>Test class: com.test.TestNG_Annotations</td>
-<td></td>
-<td>5</td>
-<td>com.test.TestNG_Annotations@54afd745</td></tr>
-<tr>
-<td title='com.test.TestNG_Annotations.testLogo()'><b>testLogo</b><br>Test class: com.test.TestNG_Annotations</td>
+<td title='com.test.RestAssured.testRegisterAPI()'><b>testRegisterAPI</b><br>Test class: com.test.RestAssured<br>Parameters: bhirwe@gmail.com, Quick@890</td>
 <td></td>
 <td>0</td>
-<td>com.test.TestNG_Annotations@54afd745</td></tr>
+<td>com.test.RestAssured@60bd273d</td></tr>
 <tr>
-<td title='com.test.TestNG_Annotations.testRequestDemoButton()'><b>testRequestDemoButton</b><br>Test class: com.test.TestNG_Annotations</td>
+<td title='com.test.RestAssured.testRegisterAPI()'><b>testRegisterAPI</b><br>Test class: com.test.RestAssured<br>Parameters: email, password</td>
 <td></td>
-<td>40</td>
-<td>com.test.TestNG_Annotations@54afd745</td></tr>
-<tr>
-<td title='com.test.TestNG_Annotations.testResources()'><b>testResources</b><br>Test class: com.test.TestNG_Annotations</td>
-<td></td>
-<td>15</td>
-<td>com.test.TestNG_Annotations@54afd745</td></tr>
+<td>2</td>
+<td>com.test.RestAssured@60bd273d</td></tr>
 </table><p>
 </body>
 </html>
